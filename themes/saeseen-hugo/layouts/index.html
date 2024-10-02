@@ -1,0 +1,31 @@
+{{ define "main" }}
+<section class="home">
+    <div class="container">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>{{ .Site.Params.hero_title }}</h1>
+                <p>{{ .Site.Params.hero_description }}</p>
+                <a href="#services" class="cta-button">{{ .Site.Params.hero_cta_text }}</a>
+            </div>
+            <div class="hero-image">
+                <img src="{{ .Site.Params.hero_image }}" alt="Hero Image">
+            </div>
+        </div>
+        <div class="services" id="services">
+            <h2>{{ .Site.Params.services_title }}</h2>
+            <p class="section-description">{{ .Site.Params.services_description }}</p>
+            <div class="services-grid">
+                {{ range .Site.Params.services }}
+                <div class="service-item">
+                    <img src="{{ .image }}" alt="{{ .title }}">
+                    <h3><a href="{{ .url }}" target="_blank">{{ .title }}</a></h3>
+                    <p>{{ .description }}</p>
+                </div>
+                {{ end }}
+            </div>
+            <a href="/daftar-harga/" class="cta-button">{{ .Site.Params.services_cta_text }} <i class="fas fa-arrow-right"></i></a>
+        </div>
+        {{ partial "testimonial.html" . }}
+    </div>
+</section>
+{{ end }}

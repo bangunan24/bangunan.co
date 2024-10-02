@@ -1,0 +1,81 @@
+{{ if .IsHome }}
+<meta charset="UTF-8">
+<meta name="viewport" content="{{ .Site.Params.viewport }}">
+<title>{{ .Site.Title }}</title>
+<meta name="description" content="{{ .Site.Params.meta_description }}">
+<link rel="icon" type="image/png" href="{{ .Site.Params.favicon | relURL }}">
+<link rel="stylesheet" href="{{ "css/styles.css" | relURL }}">
+<script src="{{ "js/menu-toggle.js" | relURL }}" defer></script>
+<link rel="stylesheet" href="{{ .Site.Params.fontawesome }}">
+<link rel="canonical" href="{{ .Permalink }}">
+{{- $ogTitle := .Site.Title -}}
+{{- $ogDescription := .Site.Params.meta_description -}}
+{{- $globalKeywords := .Site.Params.keywords -}}
+{{- $shuffledKeywords := shuffle $globalKeywords -}}
+{{- $allKeywords := delimit $shuffledKeywords ", " -}}
+<meta name="keywords" content="{{ $allKeywords }}">
+<meta property="og:type" content="localbusiness">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:title" content="{{ $ogTitle }}">
+<meta property="og:description" content="{{ $ogDescription }}">
+{{- $featuredImage := .Site.Params.featured_image | absURL -}}
+<meta property="og:image" content="{{ $featuredImage }}">
+<meta name="twitter:image" content="{{ $featuredImage }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="{{ .Permalink }}">
+<meta name="twitter:title" content="{{ $ogTitle }}">
+<meta name="twitter:description" content="{{ $ogDescription }}">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "{{ .Site.Params.hero_title }}",
+  "image": "{{ .Site.Params.featured_image }}",
+  "description": "{{ .Site.Params.meta_description }}",
+  "url": "{{ .Permalink }}",
+  "telephone": "{{ .Site.Params.telepon | safeURL }}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "{{ (index .Site.Params.footer_contact 0).text }}",
+    "addressLocality": "{{ (trim (index (split (index .Site.Params.footer_contact 0).text ",") 1) " ") }}",
+    "addressRegion": "{{ (trim (index (split (index .Site.Params.footer_contact 0).text ",") 2) " ") }}",
+    "postalCode": "16600",
+    "addressCountry": "ID"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "{{ .Site.Params.geo_latitude }}",
+    "longitude": "{{ .Site.Params.geo_longitude }}"
+  },
+  "areaServed": [
+  {{ range $index, $area := .Site.Params.area_served }}
+    {{ if $index }}, {{ end }}"{{ $area }}"
+  {{ end }}
+  ],
+  "openingHours": "{{ .Site.Params.opening_hours }}",
+  "priceRange": "Rp {{ .Site.Params.base_price }} - Rp {{ .Site.Params.price_range }}",
+  "serviceType": [
+    {{ range $index, $materials := .Site.Params.materials }}
+      {{ if $index }},{{ end }}"{{ $materials }}"
+    {{ end }}
+  ],
+  "additionalType": "https://schema.org/PaintingService",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Service",
+    "telephone": "{{ .Site.Params.telepon | safeURL }}",
+    "areaServed": "ID"
+  },
+  "paymentAccepted": [
+    {{ range $index, $method := .Site.Params.payment_methods }}
+      {{ if $index }},{{ end }}"{{ $method }}"
+    {{ end }}
+  ],
+  "cancellationPolicy": [
+    {{ range $index, $policy := .Site.Params.return_policies }}
+      {{ if $index }},{{ end }}"{{ $policy }}"
+    {{ end }}
+  ]
+}
+</script>
+{{ end }}
