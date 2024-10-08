@@ -87,7 +87,11 @@
     "telephone": "{{ .Site.Params.telepon | safeURL }}",
     "areaServed": "ID"
   },
+<<<<<<< HEAD
   "acceptedPaymentMethod": [
+=======
+  "paymentAccepted": [
+>>>>>>> c5493c1c5fd0a0acd61f04dcc9b445e7657beb1a
     {{ range $index, $method := .Site.Params.payment_methods }}
       {{ if $index }},{{ end }}"{{ $method }}"
     {{ end }}
