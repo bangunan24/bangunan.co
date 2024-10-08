@@ -1,0 +1,1086 @@
+baseURL = "https://bangunan.co/"
+languageCode = "id"
+title = "BANGUNAN.CO | Jual Bahan Bangunan dan Jasa Tukang"
+theme = "saeseen-hugo"
+summaryLength = 25
+paginate = 6
+
+[permalinks]
+  post = "/:slug/"
+  page = "/:slug/"
+  category = "/:slug/"
+
+[params]
+  # Site-wide settings
+  meta_description = "Bangunan.co adalah solusi lengkap untuk kebutuhan bahan bangunan dan jasa tukang, memberikan produk berkualitas dan layanan profesional untuk semua proyek konstruksi Anda."
+  viewport = "width=device-width, initial-scale=1.0"
+  fontawesome = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  logo = "/images/logo/bangunanco-logo-web.png"
+  footer_logo = "/images/logo/bangunanco-logo-putih.png"
+  favicon = "/images/logo/bangunanco-512x512.png"
+  author = "K. Yaman"
+  featured_image = "/images/admin/featured-image.png"
+  enableWhatApps = true
+  enableTelepon = true
+  telepon = "//+6285776786091"
+  whatsapp = "//api.whatsapp.com/send?phone=6285776786091&text=*Halo bangunan.co*%20%3A"
+  tocMinWordCount = 300
+
+  # Setting Schema
+  geo_latitude = -6.595038
+  geo_longitude = 106.817787
+  opening_hours = "Mo-Sa 08:00-17:00"
+  base_price = "100000"
+  price_range = "5000000"
+  keywords = [
+    "bahan bangunan", "jasa tukang", "konstruksi", "pembangunan rumah", "pipa PVC", "beton", "material bangunan", "furniture", "wallpaper", "cat tembok", "instalasi listrik", "pagar", "kanopi", "genteng", "septic tank"
+  ]
+  area_served = [
+    "Jakarta", "Bogor", "Depok", "Tangerang", "Bekasi", "Bandung", "Cimahi", "Sukabumi", "Cirebon", "Garut", "Tasikmalaya", "Sumedang", "Subang", "Karawang", "Purwakarta", "Cianjur", "Majalengka", "Indramayu", "Kuningan", "Banjar", "Pangandaran", "Kabupaten Bandung", "Kabupaten Bogor", "Kabupaten Bekasi", "Kabupaten Cirebon", "Kabupaten Garut", "Kabupaten Indramayu", "Kabupaten Karawang", "Kabupaten Kuningan", "Kabupaten Majalengka", "Kabupaten Pangandaran", "Kabupaten Purwakarta", "Kabupaten Subang", "Kabupaten Sukabumi", "Kabupaten Sumedang", "Kabupaten Tasikmalaya", "Serang", "Cilegon", "Tangerang Selatan", "Lebak", "Pandeglang", "Kabupaten Tangerang", "Kabupaten Serang", "Semarang", "Surakarta", "Magelang", "Salatiga", "Pekalongan", "Tegal", "Cilacap", "Purwokerto", "Pati", "Jepara", "Kudus", "Demak", "Blora", "Grobogan", "Kendal", "Temanggung", "Wonosobo", "Purworejo", "Kabupaten Magelang", "Kabupaten Boyolali", "Kabupaten Klaten", "Kabupaten Sragen", "Kabupaten Karanganyar", "Kabupaten Sukoharjo", "Kabupaten Wonogiri", "Kabupaten Pati", "Kabupaten Blora", "Kabupaten Grobogan", "Kabupaten Kudus", "Kabupaten Jepara", "Kabupaten Demak", "Kabupaten Batang", "Kabupaten Pekalongan", "Kabupaten Pemalang", "Kabupaten Tegal", "Kabupaten Brebes", "Kabupaten Cilacap", "Kabupaten Banyumas", "Kabupaten Purbalingga", "Kabupaten Banjarnegara", "Kabupaten Kebumen", "Kabupaten Temanggung", "Kabupaten Wonosobo", "Kabupaten Kendal", "Kabupaten Semarang", "Kabupaten Purworejo", "Surabaya", "Malang", "Batu", "Blitar", "Kediri", "Mojokerto", "Madiun", "Pasuruan", "Probolinggo", "Jember", "Lumajang", "Bondowoso", "Banyuwangi", "Situbondo", "Ngawi", "Magetan", "Pacitan", "Ponorogo", "Trenggalek", "Tulungagung", "Kabupaten Sidoarjo", "Kabupaten Gresik", "Kabupaten Lamongan", "Kabupaten Bojonegoro", "Kabupaten Tuban", "Kabupaten Jombang", "Kabupaten Nganjuk", "Kabupaten Madiun", "Kabupaten Magetan", "Kabupaten Ngawi", "Kabupaten Pacitan", "Kabupaten Ponorogo", "Kabupaten Blitar", "Kabupaten Tulungagung", "Kabupaten Kediri", "Kabupaten Malang", "Kabupaten Probolinggo", "Kabupaten Pasuruan", "Kabupaten Lumajang", "Kabupaten Jember", "Kabupaten Bondowoso", "Kabupaten Banyuwangi", "Kabupaten Situbondo"
+  ]
+  materials = [
+    "Pipa PVC", "Kolam Terpal", "Playwood", "Precast Beton", "Readymix Beton", "Steger Bambu", "Material Pasir Batu Bata Hebel", "Scaffolding", "Karpet Masjid", "Furniture Rumah", "Wallpaper Dinding", "Gorden", "Wastafel dan Closet", "Meja dan Kursi Besi", "Plafon PVC", "Jasa Cat Tembok", "Instalasi Kabel Listrik", "Pagar dan Tralis Besi", "Rolling Door", "Bata Roster", "Kusen Pintu Aluminium", "Kanopi", "Genteng", "Pagar Kawat", "Septic Tank"
+  ]
+  payment_methods = ["COD (Cash On Delivery)", "Transfer Bank", "Bayar Ditempat", "Transfer Setelah Pengiriman"]
+  return_policies = [
+    "Kebijakan pengembalian sesuai dengan ketentuan yang berlaku", "Garansi kualitas produk dan layanan"
+  ]
+
+  # Informasi Perusahaan
+  companyName = "BANGUNAN.CO"
+  aboutUs = "Kami adalah Jasa Pembangunan Rumah dan Jual Bahan Bangunan Pipa PVC, Kolam Terpal, Playwood, Precast Beton, Readymix Beton, Steger Bambu, Material Pasir Batu Bata Hebel, Scaffolding, Karpet Masjid, Furniture Rumah, Wallpaper Dinding, Gorden, Wastafel dan Closet, Meja dan Kursi Besi, Plafon PVC, Jasa Cat Tembok, Instalasi Kabel Listrik, Pagar dan Tralis Besi, Rolling Door, Bata Roster, Kusen Pintu Aluminium, Kanopi, Genteng, Pagar Kawat, Septic Tank."
+
+  # Informasi Kontak
+  phone = "0857-7678-6091"
+  email = "bangunanco@gmail.com"
+  address = "Jl.Lkr. Dramaga No. 09, Bogor, 16600"
+  whatsappNumber = "6285776786091"
+
+  # Hero Section
+  hero_image = "/images/admin/bg_bangunanco.jpg"
+  hero_title = "Selamat Datang di Bangunan.co"
+  hero_description = "Kami adalah Jasa Pembangunan Rumah dan Jual Bahan Bangunan Pipa PVC, Kolam Terpal, Playwood, Precast Beton, Readymix Beton, Steger Bambu, Material Pasir Batu Bata Hebel, Scaffolding, Karpet Masjid, Furniture Rumah, Wallpaper Dinding, Gorden, Wastafel dan Closet, Meja dan Kursi Besi, Plafon PVC, Jasa Cat Tembok, Instalasi Kabel Listrik, Pagar dan Tralis Besi, Rolling Door, Bata Roster, Kusen Pintu Aluminium, Kanopi, Genteng, Pagar Kawat, Septic Tank."
+  hero_cta_text = "Lihat Layanan Kami"
+
+  # Services Section
+  services_title = "Jasa & Produk"
+  services_description = "Berikut adalah beberapa jenis Jasa yang kami layani dan Produk bahan bangunan yang kami jual. Bahan bangunan dan jasa yang kami sediakan cukup lengkap dan tentunya dapat membackup semua kebutuhan material bangunan anda"
+  services_cta_text = "Lihat Daftar Harga"
+
+  # Footer Section
+  footer_about_title = "Keunggulan Kami"
+  footer_about_description = "Jangkauan Kami Luas, Bebas biaya pengirirman, Bebas biaya bongkar muat, Cara Pemesanan yang mudah, Sistem pembayaran COD 100% aman, Buka setiap hari, Gratis konsultasi, Material Lengkap"
+  footer_services_title = "Kenapa Pilih Kami"
+  footer_contact_title = "Kontak Kami"
+  footer_bottom_text = "@2024 bangunan.co. Semua Hak Dilindungi."
+
+  # Testimonials Section
+  testimonials_title = "Apa Kata Klien Kami"
+
+[[params.services]]
+  image = "/images/jual-batu-split-41.png"
+  title = "Batu Split Cor"
+  description = "Anda bisa membeli batu split khusus untuk cor kepada kami dengan ukuran batu 1/2cm, 2/3cm atau 3/5cm."
+  url = "https://batu.bangunan.co"
+
+[[params.services]]
+  image = "/images/borong-bangunan-17.png"
+  title = "Borong Bangunan"
+  description = "Kami menerima jasa borongan pembangunan rumah, ruko, kantor dll. Dengan tukang yang sudah berpengalaman."
+  url = "https://borong.bangunan.co"
+
+[[params.services]]
+  image = "/images/jual-bambu-tali-23.png"
+  title = "Bambu Tali"
+  description = "Bambu tali yang kami jual sangat cocok untuk pembuatan panggung sederhana pada acara hajatan, agustusan, hiburan dll."
+  url = "https://bambu.bangunan.co"
+
+[[params.services]]
+  image = "/images/jual-pasir-bangunan-49.png"
+  title = "Pasir Bangunan"
+  description = "Berbagai jenis pasir berkualitas kami menjualnya. Mulai dari pasir cor, pasir pasang dan pasir plester."
+  url = "https://pasir.bangunan.co"
+
+[[params.services]]
+  image = "/images/jual-panel-buis-beton-murah-18.png"
+  title = "Buis dan Panel Beton"
+  description = "Kami juga menjual Buis dan Panel Beton untuk kebutuhan konstruksi Jalan Pagar dll."
+  url = "https://precast.bangunan.co"
+
+[[params.services]]
+  image = "/images/genteng-minimalis-murah14.png"
+  title = "Genteng"
+  description = "Kami juga menjual banyak macam jenis genteng. Mulai dari genteng keramik, beton hingga genteng pasir."
+  url = "https://genteng.bangunan.co"
+
+[[params.services]]
+  image = "/images/jual-bio-septictank-17.png"
+  title = "Bio Septictank"
+  description = "Septictank yang ramah lingkungan adalah bio septictank. Selai lebih hemat juga mudah untuk di aplikasikan."
+  url = "https://septictank.bangunan.co"
+
+[[params.services]]
+  image = "/images/jual-kolam-terpal-03.png"
+  title = "Kolam Terpal"
+  description = "Dengan menggunakan kolam terpal yang kami jual, akan memudahkan anda berbudidaya iklan dimanapun."
+  url = "https://kolam.bangunan.co"
+
+[[params.services]]
+  image = "/images/instalasi-listrik-murah19.png"
+  title = "Instalasi Listrik"
+  description = "Bingung mau pasang listrik yang aman dan terstruktur di rumah?! Pake saja jasa dari kami. Berpengalaman dan amanah tentunya."
+  url = "https://listrik.bangunan.co"
+
+[[params.services]]
+  image = "/images/jasa-cat-murah23.png"
+  title = "Jasa Pengecatan Tembok"
+  description = "Kami juga menyediakan jasa khusus untuk pengecatan dinding tembok dengan tukang yang teruji dan berpengalaman."
+  url = "https://tukangcat.bangunan.co"
+
+[[params.services]]
+  image = "/images/kursi-meja-rotan-murah51.png"
+  title = "Kursi & Meja Rotan"
+  description = "Salah satu produk unggulan kami adalah kursi dan meja rotan. Banyak digemari oleh orang yang suka dengan gaya klasik minimalis."
+  url = "https://furniture.bangunan.co"
+
+[[params.services]]
+  image = "/images/harga-kanopi-minimalis-48.png"
+  title = "Kanopi Custom"
+  description = "Kami juga melayani jasa pembuatan kanopi untuk teras rumah anda dengan desain dan budget sesuai permintaan konsumen."
+  url = "https://kanopi.bangunan.co"
+
+[[params.services]]
+  image = "/images/jaul-pipa-pvc-04.png"
+  title = "Pipa PVC SNI"
+  description = "Untuk memenuhi kebutuhan material di proyek konsumen, kami menyediakan juga pipa pvc dari berbagai merk standar SNI."
+  url = "https://pipa-pvc.bangunan.co"
+
+[[params.services]]
+  image = "/images/flafond-pvc-murah10.png"
+  title = "Plafon PVC"
+  description = "Jenis plafon PVC ini adalah jenis yang terbaik dan sedang tren saat ini. Selain lebih hemat jenis plafon ini juga lebih awet."
+  url = "https://plafon-pvc.bangunan.co"
+
+[[params.services]]
+  image = "/images/jual-triplek-murah-12.png"
+  title = "Playwood"
+  description = "Kami menjual hampir semua jenis dan ukuran plywood atau triplek juga MDF. Sebagai bahan dasar yang biasa dipakai untuk produksi lemari dll."
+  url = "https://plywood.bangunan.co"
+
+[[params.services]]
+  image = "/images/harga-kusen-jendela-alumunium-25.png"
+  title = "Kusen Pintu Alumunium"
+  description = "Kelebihan dari kusen pintu alumunium adalah lebih awet dan rapi juga tersedia banyak pilihan warna dan motif."
+  url = "https://kusen-pintu.bangunan.co"
+
+[[params.services]]
+  image = "/images/teralis-minimalis-murah-02.png"
+  title = "Teralis Jendela"
+  description = "Tersedia berbagai macam model tralis dan pagar yang bisa disesuaikan dengan desain rumah anda."
+  url = "https://teralis.bangunan.co"
+
+[[params.services]]
+  image = "/images/jual-meja-besi-murah19.png"
+  title = "Meja dan Kursi Besi"
+  description = "Tren kursi dan meja besi kembali muncul. Banyak digemari karena desainnya yang sangat cocok dengan rumah tipe minimalis modern ataupun klasik."
+  url = "https://meja-kursi.bangunan.co"
+
+[[params.services]]
+  image = "/images/pasang-gorden-murah04.png"
+  title = "Gorden Polos & Motif"
+  description = "Kami juga menjual berbagai model gorden yang dapat disesuaikan dengan gaya desain interior tempat tinggal anda."
+  url = "https://gorden.bangunan.co"
+
+[[params.services]]
+  image = "/images/jasa-pasang-wallpaper-murah36.png"
+  title = "Jasa Pasang Wallpaper"
+  description = "Untuk melengkapi jasa kami di bidang interior, kami menyediakan jasa pemasangan wallpaper dinding yang akan mempercantik tampilan ruangan dalam sekejap."
+  url = "https://wallpaper.bangunan.co"
+
+[[params.services]]
+  image = "/images/grosir-karpet-murah-52.png"
+  title = "Grosir Karpet Masjid"
+  description = "Kami menyediakan berbagai jenis karpet, mulai dari karpet lokal hingga import dengan motif dan ukuran beragam sesuai dengan kebutuhan yang diinginkan."
+  url = "https://karpet.bangunan.co"
+
+[[params.services]]
+  image = "/images/pintu-garasi-10.png"
+  title = "Pintu Garasi"
+  description = "Kami melayani jasa pemasangan semua jenis pintu garasi /Rolling door manual atau otomatis untuk ruko, kantor, rumah dll."
+  url = "https://rolling.bangunan.co"
+
+[[params.services]]
+  image = "/images/sewa-scaffolding-steger-27.png"
+  title = "Scaffolding / Steger"
+  description = "Kami juga menyewakan scaffolding atau perancah besi dengan sistem sewa minimal 1 bulan per unit."
+  url = "https://scaffolding.bangunan.co"
+
+[[params.services]]
+  image = "/images/wastafel-closet-murah46.png"
+  title = "Sanitary"
+  description = "Bingung cari produk sanitary untuk toilet rumah yang berkualitas? Hubungi kami saja. Kami menyediakan berbagai merk closet, wastafel standar mutu SNI."
+  url = "https://sanitary.bangunan.co"
+
+[[params.services]]
+  image = "/images/jual-urugan-39.png"
+  title = "Material Urugan"
+  description = "Kami juga menjual material urugan, mulai dari urugan sirtu, urugan makadam, urugan tanah dan berangkal. Cocok untuk pengurugan lantai dan jalan."
+  url = "https://urugan.bangunan.co"
+
+[[params.services]]
+  image = "/images/distributor-keramik-31.png"
+  title = "Grosir Keramik"
+  description = "Kami juga menjual berbagai motif keramik, baik keramik lantai, keramik dinding dan keramik kamar mandi semua tersedia dengan harga grosir."
+  url = "https://keramik.bangunan.co"
+
+[[params.services]]
+  image = "/images/jual-batu-kali-07.png"
+  title = "Batu Pondasi"
+  description = "Kami menyediakan material batu kali dan batu belah untuk pondasi atau untuk bronjong. Jenis batu pondasinya adalah batu andesit berwarna hitam."
+  url = "https://batu.bangunan.co"
+
+[[params.services]]
+  image = "/images/jasa-cor-readymix-17.png"
+  title = "Readymix Cor"
+  description = "Readymix cor atau biasa disebut jayamix adalah cor beton cair siap pakai dengan kualitas terbaik untuk cor dak lantai, pondasi, selum dan jalan."
+  url = "https://readymix.bangunan.co"
+
+[[params.services]]
+  image = "/images/jual-kubah-masjid-10.png"
+  title = "Kubah Masjid"
+  description = "Kami menyediakan kubah masjid berbagai ukuran atau sesuai pemesanan. Jenis kubahnya; kubah enamel, kubah GRC, kubah beton dan kubah stainless steel."
+  url = "https://kubah.bangunan.co"
+
+[[params.services]]
+  image = "/images/sewa-concrete-pump-19.png"
+  title = "Pompa Beton"
+  description = "Kami juga menyewakan pompa beton atau concrete pump sebagai alat penghantar material cor readymix dari mobil molen ke titik yang sulit dijangkau dengan cepat."
+  url = "https://concretepump.bangunan.co"
+
+  [[params.footer_services]]
+  text = "Bangunan.co menawarkan bahan bangunan berkualitas tinggi dengan harga terjangkau, layanan profesional, dan pengalaman bertahun-tahun di bidang konstruksi. Kami selalu memastikan setiap proyek terlaksana dengan standar terbaik."
+
+  [[params.footer_contact]]
+    icon = "fas fa-map-marker-alt"
+    text = "Jl.Lkr. Dramaga No. 09, Bogor"
+  [[params.footer_contact]]
+    icon = "fas fa-phone-alt"
+    text = "+62 857-7678-6091"
+  [[params.footer_contact]]
+    icon = "fas fa-envelope"
+    text = "info@bangunan.co"
+
+[[params.testimonials]]
+  avatar = "/images/admin/avatar1.png"
+  name = "Budi"
+  message = "Bambu tali yang saya beli dari bangunan.co sangat kuat dan sesuai dengan kebutuhan proyek saya."
+  response = "Terima kasih atas ulasannya, Budi! Kami senang bisa membantu kebutuhan proyek Anda."
+
+[[params.testimonials]]
+  avatar = "/images/admin/avatar2.png"
+  name = "Siti"
+  message = "Layanan borongan bangunan sangat profesional. Pembangunan rumah saya selesai tepat waktu dan kualitasnya sangat memuaskan."
+  response = "Kami sangat menghargai kepercayaan Anda. Senang bisa memberikan hasil terbaik untuk rumah Anda."
+
+[[params.testimonials]]
+  avatar = "/images/admin/avatar3.png"
+  name = "Joko"
+  message = "Bahan bangunan yang dijual di bangunan.co sangat lengkap. Saya tidak perlu repot mencari material ke tempat lain."
+  response = "Terima kasih, Joko! Kami berkomitmen untuk menyediakan semua kebutuhan material bangunan dengan kualitas terbaik."
+
+[[params.testimonials]]
+  avatar = "/images/admin/avatar4.png"
+  name = "Andi"
+  message = "Saya membeli genteng dari bangunan.co dan hasilnya luar biasa. Sangat cocok untuk rumah minimalis saya."
+  response = "Senang mendengar genteng kami sesuai dengan desain rumah Anda. Terima kasih telah berbelanja di bangunan.co!"
+
+[[params.testimonials]]
+  avatar = "/images/admin/avatar5.png"
+  name = "Rina"
+  message = "Kolam terpal yang saya beli sangat berkualitas dan mudah dipasang. Cocok untuk budidaya ikan."
+  response = "Terima kasih, Rina! Kami bangga dapat menyediakan produk yang memudahkan usaha budidaya Anda."
+
+[[params.testimonials]]
+  avatar = "/images/admin/avatar6.png"
+  name = "Eko"
+  message = "Saya puas dengan jasa pemasangan rolling door dari bangunan.co. Pekerjaan rapi dan cepat."
+  response = "Kami senang mendengar kepuasan Anda, Eko. Terima kasih telah mempercayakan proyek Anda kepada kami."
+
+[[params.products]]
+    name = "Bata"
+[[params.products.items]]
+  item = "Bata Merah"
+  price = "480 /pcs"
+[[params.products.items]]
+  item = "Bata Hebel"
+  price = "6.500 /pcs"
+[[params.products.items]]
+  item = "Bata Ringan"
+  price = "6.500 /pcs"
+[[params.products.items]]
+  item = "Bata Press"
+  price = "1.500 /pcs"
+[[params.products.items]]
+  item = "Bata Expose"
+  price = "1.500 /pcs"
+[[params.products.items]]
+  item = "Bata Jumbo"
+  price = "780 /pcs"
+
+[[params.products]]
+  name = "Bambu"
+[[params.products.items]]
+  item = "Bambu Tali"
+  price = "18.000 /batang"
+[[params.products.items]]
+  item = "Bambu Steger"
+  price = "18.000 /batang"
+[[params.products.items]]
+  item = "Bambu Hitam"
+  price = "25.000 /batang"
+[[params.products.items]]
+  item = "Bambu Hias"
+  price = "20.000 /batang"
+[[params.products.items]]
+  item = "Bambu Petung"
+  price = "25.000 /batang"
+[[params.products.items]]
+  item = "Bambu Kuning"
+  price = "18.000 /batang"
+
+[[params.products]]
+  name = "Batu"
+[[params.products.items]]
+  item = "Batu Kali"
+  price = "250.000 /m3"
+[[params.products.items]]
+  item = "Batu Split"
+  price = "280.000 /m3"
+[[params.products.items]]
+  item = "Batu Pondasi"
+  price = "235.000 /m3"
+[[params.products.items]]
+  item = "Batu Belah"
+  price = "235.000 /m3"
+[[params.products.items]]
+  item = "Batu Screening"
+  price = "280.000 /m3"
+[[params.products.items]]
+  item = "Batu Alam"
+  price = "300.000 /m3"
+
+[[params.products]]
+  name = "Bangun Rumah"
+[[params.products.items]]
+  item = "Borong Pembangunan Rumah"
+  price = "3.000.000 /m"
+[[params.products.items]]
+  item = "Borong Pembangunan Kantor"
+  price = "4.500.000 /m"
+[[params.products.items]]
+  item = "Borong Pembangunan Ruko"
+  price = "4.000.000 /m"
+[[params.products.items]]
+  item = "Renovasi Rumah"
+  price = "3.500.000 /m"
+[[params.products.items]]
+  item = "Renovasi Kantor"
+  price = "6.000.000 /m"
+
+[[params.products]]
+  name = "Concrete Pump"
+[[params.products.items]]
+  item = "Sewa Concrete Pump Mini"
+  price = "3.500.000 /hari"
+[[params.products.items]]
+  item = "Sewa Concrete Pump Super Long"
+  price = "25.000.000 /hari"
+[[params.products.items]]
+  item = "Sewa Concrete Pump Master Long"
+  price = "35.000.000 /hari"
+[[params.products.items]]
+  item = "Sewa Concrete Pump Standar"
+  price = "3.800.000 /hari"
+[[params.products.items]]
+  item = "Sewa Concrete Pump Long Boom"
+  price = "7.500.000 /hari"
+
+[[params.products]]
+  name = "Furniture"
+[[params.products.items]]
+  item = "Meja Rotan Minimalis"
+  price = "2.500.000 /unit"
+[[params.products.items]]
+  item = "Kursi Rotan Custom"
+  price = "1.200.000 /unit"
+[[params.products.items]]
+  item = "Meja Rotan Kombinasi Kayu"
+  price = "3.000.000 /unit"
+[[params.products.items]]
+  item = "Kursi Rotan Kombinasi Kayu"
+  price = "1.500.000 /unit"
+[[params.products.items]]
+  item = "Meja Rotan Outdoor"
+  price = "2.800.000 /unit"
+[[params.products.items]]
+  item = "Kursi Rotan Outdoor"
+  price = "1.000.000 /unit"
+
+[[params.products]]
+  name = "Genteng"
+[[params.products.items]]
+  item = "Genteng Metal"
+  price = "26.000/buah"
+[[params.products.items]]
+  item = "Genteng Aspal"
+  price = "125.000/m²"
+[[params.products.items]]
+  item = "Genteng Keramik"
+  price = "9.800/buah"
+[[params.products.items]]
+  item = "Genteng Kaca"
+  price = "8.800/buah"
+[[params.products.items]]
+  item = "Genteng Seng"
+  price = "39.000/lembar"
+[[params.products.items]]
+  item = "Genteng Beton"
+  price = "5.800/buah"
+
+[[params.products]]
+  name = "Gorden"
+[[params.products.items]]
+  item = "Pasang Gorden Kain Akrilik"
+  price = "85.000/m"
+[[params.products.items]]
+  item = "Pasang Gorden Kain Katun"
+  price = "15.000/m"
+[[params.products.items]]
+  item = "Pasang Gorden Kain Sutra"
+  price = "9.000/m"
+[[params.products.items]]
+  item = "Pasang Gorden Kain Beludru"
+  price = "75.000/m"
+[[params.products.items]]
+  item = "Pasang Gorden Kain Rayon"
+  price = "17.500/m"
+[[params.products.items]]
+  item = "Pasang Gorden Kain Polyester"
+  price = "35.000/m"
+[[params.products.items]]
+  item = "Pasang Gorden Kain Linen"
+  price = "13.000/m"
+
+[[params.products]]
+  name = "Kanopi"
+[[params.products.items]]
+  item = "Pasang Kanopi Baja Ringan"
+  price = "450.000 /m"
+[[params.products.items]]
+  item = "Pasang Kanopi Galvalum"
+  price = "600.000 /m"
+[[params.products.items]]
+  item = "Pasang Kanopi Kaca"
+  price = "800.000 /m"
+[[params.products.items]]
+  item = "Pasang Kanopi Minimalis"
+  price = "800.000 /m"
+[[params.products.items]]
+  item = "Pasang Kanopi Polycarbonate"
+  price = "700.000 /m"
+
+[[params.products]]
+  name = "Karpet"
+[[params.products.items]]
+  item = "Karpet Masjid Polos"
+  price = "200.000 /m"
+[[params.products.items]]
+  item = "Karpet Musholla Motif"
+  price = "250.000 /m"
+[[params.products.items]]
+  item = "Karpet Masjid Tebal"
+  price = "300.000 /m"
+[[params.products.items]]
+  item = "Karpet Musholla Anti-Slip"
+  price = "150.000 /m"
+[[params.products.items]]
+  item = "Karpet Masjid Premium"
+  price = "350.000 /m"
+[[params.products.items]]
+  item = "Karpet Musholla Ekonomis"
+  price = "65.000 /m"
+
+[[params.products]]
+  name = "Kawat"
+[[params.products.items]]
+  item = "Pasang Kawat Pagar"
+  price = "30.000 /m"
+[[params.products.items]]
+  item = "Pasang Kawat Duri"
+  price = "40.000 /m"
+[[params.products.items]]
+  item = "Pasang Kawat Harmonika"
+  price = "50.000 /m"
+[[params.products.items]]
+  item = "Pasang Pagar BRC"
+  price = "50.000 /m"
+[[params.products.items]]
+  item = "Pasang Kawat Pengaman"
+  price = "50.000 /m"
+
+[[params.products]]
+  name = "Keramik"
+[[params.products.items]]
+  item = "Keramik Lantai Standar"
+  price = "35.000 - 120.000 /m"
+[[params.products.items]]
+  item = "Keramik Marmer"
+  price = "250.000 - 2.000.000 /m"
+[[params.products.items]]
+  item = "Keramik Granit"
+  price = "120.000 - 280.000 /m"
+[[params.products.items]]
+  item = "Keramik Batu Alam"
+  price = "360.000 - 450.000 /m"
+[[params.products.items]]
+  item = "Keramik Mozaik"
+  price = "20.000 - 120.000 /m"
+[[params.products.items]]
+  item = "Keramik Tembok"
+  price = "90.000 - 500.000 /m"
+
+[[params.products]]
+  name = "Kolam Terpal"
+[[params.products.items]]
+  item = "Kolam Terpal Diameter 2, Tinggi 1 m"
+  price = "795.000 /unit"
+[[params.products.items]]
+  item = "Kolam Terpal Diameter 2,5, Tinggi 1 m"
+  price = "940.000 /unit"
+[[params.products.items]]
+  item = "Kolam Terpal Diameter 3, Tinggi 1 m"
+  price = "1.000.000 /unit"
+[[params.products.items]]
+  item = "Kolam Terpal Diameter 3,5, Tinggi 1 m"
+  price = "1.260.000 /unit"
+
+[[params.products]]
+  name = "Kubah Masjid"
+[[params.products.items]]
+  item = "Kubah Enamel"
+  price = "1.500.000 /unit"
+[[params.products.items]]
+  item = "Kubah GRC"
+  price = "1.750.000 /unit"
+[[params.products.items]]
+  item = "Kubah Stainless"
+  price = "2.000.000 /unit"
+[[params.products.items]]
+  item = "Kubah Beton"
+  price = "1.000.000 /unit"
+[[params.products.items]]
+  item = "Kubah Klasik"
+  price = "1.800.000 /unit"
+[[params.products.items]]
+  item = "Kubah Galvalum"
+  price = "1.900.000 /unit"
+
+[[params.products]]
+  name = "Kusen Pintu"
+[[params.products.items]]
+  item = "Kusen Aluminium 4 Inch"
+  price = "130.000/m"
+[[params.products.items]]
+  item = "Kusen Aluminium 3 Inch"
+  price = "100.000/m"
+[[params.products.items]]
+  item = "Kusen Aluminium 4 Inch (Lokal)"
+  price = "110.000/m"
+[[params.products.items]]
+  item = "Kusen Aluminium 3 Inch (Lokal)"
+  price = "90.000/m"
+[[params.products.items]]
+  item = "Kusen Aluminium 4 Inch (Variasi)"
+  price = "100.000/m"
+[[params.products.items]]
+  item = "Kusen Aluminium 3 Inch (Variasi)"
+  price = "130.000/m"
+[[params.products.items]]
+  item = "Pintu Aluminium 4 Inch"
+  price = "130.000/m"
+[[params.products.items]]
+  item = "Pintu Aluminium 3 Inch"
+  price = "100.000/m"
+
+[[params.products]]
+  name = "Instalasi Listrik"
+[[params.products.items]]
+  item = "Instalasi Listrik Rumah"
+  price = "500.000"
+[[params.products.items]]
+  item = "Instalasi Listrik Kantor"
+  price = "750.000"
+[[params.products.items]]
+  item = "Instalasi Listrik Ruko"
+  price = "600.000"
+[[params.products.items]]
+  item = "Perbaikan Instalasi Listrik"
+  price = "250.000"
+[[params.products.items]]
+  item = "Pemasangan Saklar dan Stop Kontak"
+  price = "150.000"
+[[params.products.items]]
+  item = "Pemasangan Panel Listrik"
+  price = "1.200.000"
+[[params.products.items]]
+  item = "Membuat Lubang Stop Kontak"
+  price = "25.000"
+[[params.products.items]]
+  item = "Membuat Lubang Saklar Single"
+  price = "25.000"
+[[params.products.items]]
+  item = "Pembobokan Saklar Seri"
+  price = "25.000"
+[[params.products.items]]
+  item = "Pembobokan Outlet Telepon"
+  price = "25.000"
+[[params.products.items]]
+  item = "Membuat Lubang Outlet Antena"
+  price = "25.000"
+[[params.products.items]]
+  item = "Membuat Lubang Outlet MCB"
+  price = "45.000"
+[[params.products.items]]
+  item = "Pemasangan Kabel Listrik"
+  price = "65.000"
+[[params.products.items]]
+  item = "Pemasangan Saklar"
+  price = "70.000"
+[[params.products.items]]
+  item = "Instalasi Saklar AC"
+  price = "100.000"
+[[params.products.items]]
+  item = "Instalasi Stop Kontak Water Heater"
+  price = "100.000"
+[[params.products.items]]
+  item = "Pemasangan Lampu"
+  price = "100.000"
+[[params.products.items]]
+  item = "Instalasi Lampu Taman"
+  price = "140.000"
+[[params.products.items]]
+  item = "Pemasangan Kabel Antena Layar"
+  price = "150.000"
+[[params.products.items]]
+  item = "Pemasangan Radar Pompa Air"
+  price = "150.000"
+[[params.products.items]]
+  item = "Instalasi Panel MCB Listrik"
+  price = "180.000"
+[[params.products.items]]
+  item = "Pemasangan MCB"
+  price = "280.000"
+[[params.products.items]]
+  item = "Instalasi Kabel Induk"
+  price = "100.000"
+[[params.products.items]]
+  item = "Pasang Lampu Fitting Plafon"
+  price = "45.000"
+[[params.products.items]]
+  item = "Pasang Lampu Gantung"
+  price = "45.000"
+[[params.products.items]]
+  item = "Pasang Kipas Angin Gantung"
+  price = "150.000"
+[[params.products.items]]
+  item = "Pasang Exhaust Fan Dinding/Plafon"
+  price = "150.000"
+[[params.products.items]]
+  item = "Pasang Lampu Dinding"
+  price = "100.000"
+[[params.products.items]]
+  item = "Pasang Lampu Neon"
+  price = "110.000"
+[[params.products.items]]
+  item = "Pasang Lampu Downlight"
+  price = "100.000"
+[[params.products.items]]
+  item = "Pasang Lampu Halogen"
+  price = "95.000"
+[[params.products.items]]
+  item = "Pasang Lampu Sorot"
+  price = "150.000"
+[[params.products.items]]
+  item = "Pasang Panel Box Titik 15 Grup"
+  price = "180.000"
+
+[[params.products]]
+  name = "Meja & Kursi"
+[[params.products.items]]
+  item = "Meja Besi Minimalis"
+  price = "1.500.000 /unit"
+[[params.products.items]]
+  item = "Kursi Besi Custom"
+  price = "750.000 /unit"
+[[params.products.items]]
+  item = "Meja Besi Kombinasi Kayu"
+  price = "2.000.000 /unit"
+[[params.products.items]]
+  item = "Kursi Besi Kombinasi Kayu"
+  price = "1.000.000 /unit"
+[[params.products.items]]
+  item = "Meja Besi Outdoor"
+  price = "1.800.000 /unit"
+[[params.products.items]]
+  item = "Kursi Besi Outdoor"
+  price = "900.000 /unit"
+
+[[params.products]]
+  name = "Pasir"
+[[params.products.items]]
+  item = "Pasir Beton"
+  price = "320.000 /m3"
+[[params.products.items]]
+  item = "Pasir Urug"
+  price = "250.000 /m3"
+[[params.products.items]]
+  item = "Pasir Pasang"
+  price = "280.000 /m3"
+[[params.products.items]]
+  item = "Pasir Halus"
+  price = "550.000 /m3"
+[[params.products.items]]
+  item = "Pasir Hitam"
+  price = "350.000 /m3"
+
+[[params.products]]
+  name = "Pipa PVC"
+[[params.products.items]]
+  item = "Pipa PVC 1/2 inch"
+  price = "15.000 /pcs"
+[[params.products.items]]
+  item = "Pipa PVC 3/4 inch"
+  price = "20.000 /pcs"
+[[params.products.items]]
+  item = "Pipa PVC 1 inch"
+  price = "25.000 /pcs"
+[[params.products.items]]
+  item = "Pipa PVC 2 inch"
+  price = "40.000 /pcs"
+[[params.products.items]]
+  item = "Pipa PVC 3 inch"
+  price = "60.000 /pcs"
+[[params.products.items]]
+  item = "Pipa PVC 4 inch"
+  price = "90.000 /pcs"
+
+[[params.products]]
+  name = "Plafon PVC"
+[[params.products.items]]
+  item = "Pasang Plafon PVC Ruang Tamu"
+  price = "250.000 /m"
+[[params.products.items]]
+  item = "Pasang Plafon PVC Kamar Tidur"
+  price = "270.000 /m"
+[[params.products.items]]
+  item = "Pasang Plafon PVC Dapur"
+  price = "250.000 /m"
+[[params.products.items]]
+  item = "Pasang Plafon PVC Anti Air"
+  price = "350.000 /m"
+[[params.products.items]]
+  item = "Pasang Plafon PVC Seluruh Rumah"
+  price = "230.000 /m"
+
+[[params.products]]
+  name = "Plywood"
+[[params.products.items]]
+  item = "Triplek 4mm"
+  price = "52.000 /lembar"
+[[params.products.items]]
+  item = "Triplek 6mm"
+  price = "82.000 /lembar"
+[[params.products.items]]
+  item = "Triplek 8mm"
+  price = "87.000 /lembar"
+[[params.products.items]]
+  item = "Triplek 9mm"
+  price = "130.000 /lembar"
+[[params.products.items]]
+  item = "Plywood MDF 18mm"
+  price = "180.850 /lembar"
+[[params.products.items]]
+  item = "Plywood Hard Wood 18mm"
+  price = "225.850 /lembar"
+[[params.products.items]]
+  item = "Plywood Blockboard 18mm"
+  price = "160.850 /lembar"
+[[params.products.items]]
+  item = "Plywood Soft Wood Albasia 18mm"
+  price = "167.850 /lembar"
+[[params.products.items]]
+  item = "Melamin 4mm"
+  price = "90.000 /lembar"
+
+[[params.products]]
+  name = "Precast Beton"
+[[params.products.items]]
+  item = "Pagar Panel Beton Pracetak"
+  price = "450.000 /unit"
+[[params.products.items]]
+  item = "Dak Panel Beton Pracetak"
+  price = "600.000 /unit"
+[[params.products.items]]
+  item = "Buis Beton Pracetak"
+  price = "450.000 /unit"
+[[params.products.items]]
+  item = "Box Culvert"
+  price = "500.000 /unit"
+[[params.products.items]]
+  item = "U-ditch Beton"
+  price = "450.000 /unit"
+
+[[params.products]]
+  name = "Readymix Cor"
+[[params.products.items]]
+  item = "Readymix Kelas B0"
+  price = "870.000 /m3"
+[[params.products.items]]
+  item = "Readymix Kelas K225"
+  price = "640.000 /m3"
+[[params.products.items]]
+  item = "Readymix Kelas K250"
+  price = "860.000 /m3"
+[[params.products.items]]
+  item = "Readymix Kelas K300"
+  price = "900.000 /m3"
+[[params.products.items]]
+  item = "Readymix Kelas K350"
+  price = "940.000 /m3"
+
+[[params.products]]
+  name = "Rolling Door"
+[[params.products.items]]
+  item = "Pasang Rolling Door Garasi"
+  price = "500.000 /m"
+[[params.products.items]]
+  item = "Pasang Rolling Door Besi"
+  price = "1.800.000 /m"
+[[params.products.items]]
+  item = "Pasang Rolling Door Aluminium"
+  price = "2.400.000 /m"
+[[params.products.items]]
+  item = "Pasang Rolling Door Kayu"
+  price = "1.500.000 /m"
+[[params.products.items]]
+  item = "Perbaikan Rolling Door"
+  price = "700.000 /m"
+
+[[params.products]]
+  name = "Bata Roster"
+[[params.products.items]]
+  item = "Bata Roster Ventilasi"
+  price = "15.000 /pcs"
+[[params.products.items]]
+  item = "Bata Roster Pagar"
+  price = "18.000 /pcs"
+[[params.products.items]]
+  item = "Bata Roster Dekorasi"
+  price = "20.000 /pcs"
+[[params.products.items]]
+  item = "Bata Roster Custom"
+  price = "25.000 /pcs"
+[[params.products.items]]
+  item = "Bata Roster warna-warni"
+  price = "22.000 /pcs"
+
+[[params.products]]
+  name = "Sanitary"
+[[params.products.items]]
+  item = "Closet Wall-Hung"
+  price = "9.500.000 /unit"
+[[params.products.items]]
+  item = "Closet Duoblok"
+  price = "900.000 /unit"
+[[params.products.items]]
+  item = "Closet Monoblok"
+  price = "810.000 /unit"
+[[params.products.items]]
+  item = "Wastafel Undermount"
+  price = "400.000 /unit"
+[[params.products.items]]
+  item = "Wastafel Drop-in"
+  price = "786.000 /unit"
+[[params.products.items]]
+  item = "Wastafel Pedestal"
+  price = "700.000 /unit"
+[[params.products.items]]
+  item = "Wastafel Side by Side"
+  price = "350.000 /unit"
+[[params.products.items]]
+  item = "Wastafel Gantung"
+  price = "350.000 /unit"
+
+[[params.products]]
+  name = "Scaffolding"
+[[params.products.items]]
+  item = "Mainframe"
+  price = "750.000 /unit"
+[[params.products.items]]
+  item = "Ladder Frame"
+  price = "600.000 /unit"
+[[params.products.items]]
+  item = "Cross Brace"
+  price = "300.000 /unit"
+[[params.products.items]]
+  item = "Joint Pin"
+  price = "150.000 /unit"
+[[params.products.items]]
+  item = "Catwalk"
+  price = "500.000 /unit"
+[[params.products.items]]
+  item = "Stair/Tangga"
+  price = "500.000 /unit"
+[[params.products.items]]
+  item = "U-Head"
+  price = "400.000 /unit"
+[[params.products.items]]
+  item = "Jack Base"
+  price = "500.000 /unit"
+[[params.products.items]]
+  item = "Roda Scaffolding"
+  price = "800.000 /unit"
+[[params.products.items]]
+  item = "Wingnut"
+  price = "100.000 /unit"
+[[params.products.items]]
+  item = "Tie Rod"
+  price = "200.000 /unit"
+[[params.products.items]]
+  item = "Pipa Besi"
+  price = "300.000 /unit"
+[[params.products.items]]
+  item = "Pipe Support"
+  price = "300.000 /unit"
+
+[[params.products]]
+  name = "Bio Septictank"
+[[params.products.items]]
+  item = "Bio Septictank 1-2 Orang"
+  price = "750.000 /unit"
+[[params.products.items]]
+  item = "Bio Septictank 3-5 Orang"
+  price = "2.500.000 /unit"
+[[params.products.items]]
+  item = "Bio Septictank 6-10 Orang"
+  price = "2.800.000 /unit"
+[[params.products.items]]
+  item = "Bio Septictank Custom"
+  price = "1.750.000 /unit"
+[[params.products.items]]
+  item = "Bio Septictank SNI"
+  price = "2.300.000 /unit"
+
+[[params.products]]
+  name = "Pagar & Teralis"
+[[params.products.items]]
+  item = "Teralis Jendela"
+  price = "500.000 /unit"
+[[params.products.items]]
+  item = "Pagar Besi Minimalis"
+  price = "600.000 /unit"
+[[params.products.items]]
+  item = "Pagar Besi Modern"
+  price = "700.000 /unit"
+[[params.products.items]]
+  item = "Teralis Pintu"
+  price = "400.000 /unit"
+[[params.products.items]]
+  item = "Pagar dan Teralis Custom"
+  price = "650.000 /unit"
+
+[[params.products]]
+  name = "Tukang Car"
+[[params.products.items]]
+  item = "Cat Tembok Interior"
+  price = "80.000 /m"
+[[params.products.items]]
+  item = "Cat Tembok Eksterior"
+  price = "250.000 /m"
+[[params.products.items]]
+  item = "Cat Waterproof"
+  price = "300.000 /m"
+[[params.products.items]]
+  item = "Cat Anti Jamur"
+  price = "180.000 /m"
+[[params.products.items]]
+  item = "Cat Semprot"
+  price = "210.000 /m"
+
+[[params.products]]
+  name = "Material Urug"
+[[params.products.items]]
+  item = "Sirtu"
+  price = "1.700.000 /truk"
+[[params.products.items]]
+  item = "Brangkal"
+  price = "1.700.000 /truk"
+[[params.products.items]]
+  item = "Basecose"
+  price = "2.100.000 /truk"
+[[params.products.items]]
+  item = "Makadam"
+  price = "2.000.000 /truk"
+[[params.products.items]]
+  item = "Tanah-Merah"
+  price = "1.250.000 /truk"
+[[params.products.items]]
+  item = "Limestone"
+  price = "1.700.000 /truk"
+
+[[params.products]]
+  name = "Wallpaper"
+[[params.products.items]]
+  item = "Pasang Wallpaper Ruang Tamu"
+  price = "55.000 /m"
+[[params.products.items]]
+  item = "Pasang Wallpaper Kamar Tidur"
+  price = "85.000 /m"
+[[params.products.items]]
+  item = "Pasang Wallpaper Anti Air"
+  price = "100.000 /m"
+[[params.products.items]]
+  item = "Pasang Wallpaper Custom"
+  price = "65.000 /m"
+[[params.products.items]]
+  item = "Pasang Wallpaper Seluruh Rumah"
+  price = "55.000 /m"
+
+  # Menu Section
+  [[params.menu_items]]
+    title = "Beranda"
+    url = "/"
+  [[params.menu_items]]
+    title = "Profile"
+    url = "/profile/"
+  [[params.menu_items]]
+    title = "Daftar Harga"
+    url = "/daftar-harga/"
+
+[params.header]
+   title = "Sedia Bahan Bangunan dan Jasa Tukang | "
+   highlight = "Bangunan.co"
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 3
+
+[related]
+  threshold = 80
+  includeNewer = true
+  toLower = false
+
+[[related.indices]]
+  name = "categories"
+  weight = 100
