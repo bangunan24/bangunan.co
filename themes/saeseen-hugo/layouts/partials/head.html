@@ -5,11 +5,9 @@
 <script src="{{ "js/menu-toggle.js" | relURL }}" defer></script>
 <link rel="stylesheet" href="{{ .Site.Params.fontawesome }}">
 <link rel="canonical" href="{{ .Permalink }}">
-
 {{ $title := .Site.Title }}
 {{ $description := .Site.Params.meta_description }}
 {{ $keywords := .Site.Params.keywords | default slice }}
-
 {{ if .IsHome }}
   <title>{{ $title }}</title>
   <meta name="description" content="{{ $description }}">
@@ -33,7 +31,6 @@
   <meta name="description" content="{{ .Summary | default $description }}">
   <meta name="keywords" content="{{ with .Params.keywords }}{{ delimit . ", " }}{{ else }}{{ delimit $keywords ", " }}{{ end }}">
 {{ end }}
-
 <meta property="og:type" content="localbusiness">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:title" content="{{ $title }}">
@@ -45,7 +42,6 @@
 <meta name="twitter:url" content="{{ .Permalink }}">
 <meta name="twitter:title" content="{{ $title }}">
 <meta name="twitter:description" content="{{ $description }}">
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -75,31 +71,37 @@
   ],
   "openingHours": "{{ .Site.Params.opening_hours }}",
   "priceRange": "Rp {{ .Site.Params.base_price }} - Rp {{ .Site.Params.price_range }}",
-  "serviceType": [
+  "makesOffer": [
     {{ range $index, $materials := .Site.Params.materials }}
-      {{ if $index }},{{ end }}"{{ $materials }}"
+      {{ if $index }},{{ end }}
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "{{ $materials }}"
+        }
+      }
     {{ end }}
   ],
-  "additionalType": "https://schema.org/PaintingService",
+  "additionalType": "https://schema.org/Service",
   "contactPoint": {
     "@type": "ContactPoint",
     "contactType": "Customer Service",
     "telephone": "{{ .Site.Params.telepon | safeURL }}",
     "areaServed": "ID"
   },
-<<<<<<< HEAD
   "acceptedPaymentMethod": [
-=======
-  "paymentAccepted": [
->>>>>>> c5493c1c5fd0a0acd61f04dcc9b445e7657beb1a
     {{ range $index, $method := .Site.Params.payment_methods }}
       {{ if $index }},{{ end }}"{{ $method }}"
     {{ end }}
   ],
-  "cancellationPolicy": [
-    {{ range $index, $policy := .Site.Params.return_policies }}
-      {{ if $index }},{{ end }}"{{ $policy }}"
-    {{ end }}
-  ]
+  "hasMerchantReturnPolicy": {
+    "@type": "MerchantReturnPolicy",
+    "returnPolicyCategory": "https://schema.org/Refundable",
+    "merchantReturnDays": "30",
+    "returnMethod": "https://schema.org/ReturnInStore",
+    "returnFees": "https://schema.org/FreeReturn",
+    "description": "{{ (index .Site.Params.return_policies 0) }}"
+  }
 }
 </script>
