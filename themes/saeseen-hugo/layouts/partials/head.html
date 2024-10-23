@@ -3,7 +3,7 @@
 <link rel="icon" type="image/png" href="{{ .Site.Params.favicon | relURL }}">
 <link rel="stylesheet" href="{{ "css/styles.css" | relURL }}">
 <script src="{{ "js/menu-toggle.js" | relURL }}" defer></script>
-<link rel="stylesheet" href="{{ .Site.Params.fontawesome }}">
+<link rel="stylesheet" href="{{ .Site.Params.fontawesome }}" media="print" onload="this.media='all'">
 <link rel="canonical" href="{{ .Permalink }}">
 {{ $title := .Site.Title }}
 {{ $description := .Site.Params.meta_description }}
